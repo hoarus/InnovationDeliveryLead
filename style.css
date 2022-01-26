@@ -1,0 +1,74 @@
+body {
+  background-color: black;
+}
+
+h1, h2, p, div{
+  color: white;
+  text-align: center;
+}
+
+
+.page-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+section {
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
+header {
+  margin-block: 2em;
+}
+
+.arrow {
+  align-self: center;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */  
+}
+
+.right-arrow {
+  transform: scale(5, 10);
+  margin-left: 2rem;
+}
+
+.right-arrow-hidden {
+  border-left: 40px solid transparent;
+}
+
+.left-arrow { 
+  transform: scale(5, 10);
+  margin-right: 2rem;
+
+}
+
+.left-arrow-hidden {
+  border-right: 40px solid transparent;
+}
+
+.arrow:hover {
+  color: #ffc600;
+}
+.card {
+  border: solid 2px white;
+  border-radius: 5px;
+  margin: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden-block {
+  width: 0px;
+  height: 0px;
+  border-left: 44.5px solid transparent;
+  border-top: 1px solid transparent;
+}
+
