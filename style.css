@@ -21,6 +21,44 @@ section {
   margin: auto;
 }
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 80%;
+}
+.card {
+  border: solid 2px white;
+  border-radius: 5px;
+  max-width: 100%;
+  transform: scale(1,1);
+  
+  transition: transform 300ms ease-in-out;
+}
+
+.transition-left {
+  transform-origin: left;
+}
+
+.transition-right {
+  transform-origin: right;
+}
+
+.card > * {
+  opacity: 1;
+}
+
+.hidden-card{
+  transform: scale(0,1);
+  border: none;
+}
+
+.transitioning > * {
+  opacity: 0;
+}
+.hidden-card > * {
+  display: none;
+}
 header {
   margin-block: 2em;
 }
@@ -55,15 +93,13 @@ header {
 .arrow:hover {
   color: #ffc600;
 }
-.card {
-  border: solid 2px white;
-  border-radius: 5px;
-  margin: 1em;
-}
+
 
 .hidden {
   display: none;
 }
+
+
 
 .hidden-block {
   width: 0px;
