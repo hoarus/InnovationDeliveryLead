@@ -2,6 +2,8 @@ console.log("hello")
 
 let activeCard = 1;
 
+let learnMore = document.querySelector(".learn-more")
+let thankYou = document.querySelector(".thank-you")
 let leftArrow = document.querySelector(".left-arrow");
 let rightArrow = document.querySelector(".right-arrow");
 let cards = document.querySelectorAll(".card");
@@ -13,7 +15,38 @@ let card5 = document.querySelector(".card-5");
 let card6 = document.querySelector(".card-6");
 let hiddenBlockLeft = document.querySelector(".hidden-block-left");
 let hiddenBlockRight = document.querySelector(".hidden-block-right");
+let section = document.querySelector("section");
+let footer = document.querySelector("footer");
+let headshot = document.querySelector(".headshot");
 
+learnMore.addEventListener('click', revealContent);
+
+  function revealContent(){
+    setTimeout(function() {
+      section.classList.remove("hidden");
+      footer.classList.remove("hidden");
+      headshot.classList.add("hidden");
+      learnMore.classList.add("hidden");
+    }, 200);
+  }
+
+thankYou.addEventListener('click', hideContent);
+
+function hideContent(){
+  setTimeout(function() {
+    activeCard = 1;
+    section.classList.add("hidden");
+    footer.classList.add("hidden");
+    headshot.classList.remove("hidden");
+    learnMore.classList.remove("hidden");
+    card1.classList.remove("hidden-card");
+    card6.classList.add("hidden-card")
+    leftArrow.classList.add("hidden");
+    rightArrow.classList.remove("hidden");
+    hiddenBlockLeft.classList.remove('hidden');
+    hiddenBlockRight.classList.add('hidden');
+  }, 200);
+}
 
 leftArrow.addEventListener('click', cardDown);
 rightArrow.addEventListener('click', cardUp);

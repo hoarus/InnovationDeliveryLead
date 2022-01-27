@@ -1,5 +1,6 @@
 To do:
 - Make side arrows fixed rather than rotating up and down with content
-- fix positioning so cards are always center
 - optimise javascript to avoid repetition
 - clean out console logs from javascript
+- Make responsive 
+- Make mobile option
