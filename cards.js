@@ -13,6 +13,7 @@ let card3 = document.querySelector(".card-3");
 let card4 = document.querySelector(".card-4");
 let card5 = document.querySelector(".card-5");
 let card6 = document.querySelector(".card-6");
+let icons = document.querySelector(".icon");
 let hiddenBlockLeft = document.querySelector(".hidden-block-left");
 let hiddenBlockRight = document.querySelector(".hidden-block-right");
 let section = document.querySelector("section");
