@@ -1,0 +1,41 @@
+.checkbox-line {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.checkbox > * {
+    text-align: start;
+}
+
+.checkbox-label {
+    text-align: start;
+}
+
+/* HTML 
+<!-- Checklist -->
+<div class="checkbox-line">
+<input class="checkbox"id='one' type='checkbox' />
+<label for='one' class="checkbox-label">
+  Co-designed a method to convert interview responses into rich, digestible data points.
+</label>
+</div>
+<p></p>
+<div class="checkbox-line">
+<input id='two' type='checkbox' class="checkbox"/>
+<label for='two'class="checkbox-label">
+  Led the charge in developing, testing and refining a prototype application to bring our client's experiences 
+to life.
+</label>
+</div>
+<p></p>
+<div class="checkbox-line">
+<input id='three' type='checkbox' class="checkbox" />
+<label for='three'class="checkbox-label">
+  And used my programming experience to automatically analyze and tag each of our interview 
+  observations into useful themes.
+</label>
+</div>
+<p></p>
+
+*/

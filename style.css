@@ -26,12 +26,24 @@ p {
 .page-wrapper{
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 95%;
   margin: auto;
   align-items: center;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Small devices */
+@media only screen and (max-width: 768px) {
+ 
+  p{
+    font-size: 1rem;
+  }
+
+  .page-wrapper {
+    width: 98%;
+  }
+}
+
+/* Large devices */
 @media only screen and (min-width: 1350px) {
  
   p{
@@ -112,6 +124,14 @@ section {
   align-items: flex-start;
 }
 
+@media only screen and (max-width: 768px) {
+ 
+  section {
+    width: 100%;
+  }
+}
+
+
 .cards {
   display: flex;
   flex-direction: row;
@@ -176,6 +196,7 @@ section {
   /* transform: scale(5, 10); */
   /* margin-left: 2rem; */
   margin-right: 0px;
+  margin-left: 0.5rem;
 }
 
 .right-arrow-hidden {
@@ -185,6 +206,7 @@ section {
 .left-arrow { 
   /* transform: scale(5, 10); */
   margin-left: 0px;
+  margin-right: 0.5rem;
 
 }
 
@@ -206,11 +228,21 @@ section {
 .hidden-block {
   width: 0px;
   height: 0px;
-  border-left: 45.375px solid transparent;
-  border-left: 5.85rem solid transparent;;
+  border-left: 6.33rem solid transparent;
   border-top: 1px solid transparent;
 }
 
+@media only screen and (max-width: 768px) {
+ 
+  .arrow {
+    font-size: 3em;
+    line-height: 2em;
+  }
+
+  .hidden-block{
+    border-left: 3rem solid transparent;
+  }
+}
 
 /* Footer */
 
@@ -223,3 +255,21 @@ footer {
   height: auto;
   filter: brightness(0) saturate(100%) invert(75%) sepia(72%) saturate(2218%) hue-rotate(2deg) brightness(104%) contrast(110%);
 }
+
+.body-image {
+  max-width: 60%;
+  height: auto;
+}
+
+strong {
+  color: #ffc600;
+}
+
+.emphasis {
+  font-size: 6rem;
+  color: #ffc600;
+  text-align: center;
+  margin: 0px;
+}
+
+/* Checklist */
